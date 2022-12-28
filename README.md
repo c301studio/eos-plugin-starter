@@ -1,2 +1,3 @@
 # eos-plugin-starter
-Eos 插件开发模板
+
+Eos1.0 插件开发快速开始模板（WIP）
