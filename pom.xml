@@ -45,6 +45,20 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.c301.modules</groupId>
+                <artifactId>eos-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>EosPlugin</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <resources>
             <resource>
