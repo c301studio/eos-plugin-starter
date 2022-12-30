@@ -1,5 +1,6 @@
 package com.c301.modules.controller;
 
+import com.c301.modules.plugin.base.annotation.ApiVersion;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @Controller
+@ApiVersion(value = "/ap1")
 @RestController
 @RequestMapping("/hello")
 public class HelloController {
