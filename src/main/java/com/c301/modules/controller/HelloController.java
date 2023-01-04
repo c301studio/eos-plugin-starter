@@ -1,8 +1,6 @@
 package com.c301.modules.controller;
 
 import com.c301.modules.plugin.base.annotation.ApiVersion;
-import org.springframework.core.io.FileSystemResource;
-import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,11 +30,6 @@ public class HelloController {
     @GetMapping("/{say}")
     public String say(@PathVariable("say") String say) {
         return say;
-    }
-
-    @GetMapping("/file")
-    public Resource hello1() {
-        return new FileSystemResource("D:/图片/EC83488719EDDFF991B94A75761DBD19.jpg");
     }
 
 }
