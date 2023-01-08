@@ -28,6 +28,12 @@
             <artifactId>talos-modules-plugin-base</artifactId>
             <version>${talos.modules.version}</version>
         </dependency>
+        <!-- 取消注释启用 mysql 数据库的支持
+        <dependency>
+            <groupId>com.c301.modules</groupId>
+            <artifactId>talos-modules-crud-mybatis-plus</artifactId>
+            <version>${talos.modules.version}</version>
+        </dependency>-->
 
     </dependencies>
 
