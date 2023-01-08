@@ -11,28 +11,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 测试接口
+ * 这是一个接口开发的示例
+ * 若您不需要接口则可以将该文件移除
  *
- * @Title HelloController
- * @ClassName com.c301.modules.controller.HelloController
  * @Author Chenbing
- * @Date 2022/12/28 15:08
- * @Version 1.0
  **/
 @Api(tags = "Hello接口")
 @Controller
-@ApiVersion(value = "/ap1")
+@ApiVersion
 @RestController
 @RequestMapping("/hello")
-public class HelloController {
+public class DemoController {
 
     @GetMapping("/hello-world")
-    @ApiOperation("普通接口")
+    @ApiOperation("测试接口 hello-world")
     public String hello() {
         return "Hello world";
     }
 
     @GetMapping("/{say}")
-    @ApiOperation("Say接口")
+    @ApiOperation("测试接口 say")
     public String say(@PathVariable("say") String say) {
         return say;
     }

@@ -5,10 +5,10 @@
 
     <groupId>com.c301.modules</groupId>
     <artifactId>eos-plugin-starter</artifactId>
-    <name>eos-plugin-starter</name>
-    <version>1.0.0</version>
+    <name>${project.artifactId}</name>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <description>Eos1.0 插件开发快速开始模板</description>
+    <description>Eos1.0.1 插件开发快速开始模板</description>
 
     <properties>
         <java.version>11</java.version>
@@ -17,15 +17,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <talos.modules.version>2.0.2-SNAPSHOT</talos.modules.version>
         <maven.jar.plugin.version>3.2.2</maven.jar.plugin.version>
-        <eos.maven.plugin.version>1.0.0</eos.maven.plugin.version>
+        <eos.maven.plugin.version>1.0.1-SNAPSHOT</eos.maven.plugin.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.c301.modules</groupId>
             <artifactId>talos-modules-plugin-base</artifactId>
-            <version>1.0.0</version>
+            <version>${talos.modules.version}</version>
         </dependency>
 
     </dependencies>

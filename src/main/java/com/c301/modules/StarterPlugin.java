@@ -6,8 +6,10 @@ import org.pf4j.PluginWrapper;
 import org.springframework.stereotype.Component;
 
 /**
- * 插件启动测试
- */
+ * 插件入口
+ *
+ * @Author Chenbing
+ **/
 @Slf4j
 @Component
 public class StarterPlugin extends BasePlugin {
@@ -18,19 +20,16 @@ public class StarterPlugin extends BasePlugin {
 
     @Override
     public void start() {
-        log.info("插件启动！");
-        System.out.println("插件启动！");
+        log.debug("插件启动！");
     }
 
     @Override
     public void stop() {
-        log.info("插件停止！");
-        System.out.println("插件停止！");
+        log.debug("插件停止！");
     }
 
     @Override
     public void delete() {
-        log.info("插件删除！");
-        System.out.println("插件删除！");
+        log.debug("插件删除！");
     }
 }
